@@ -1815,7 +1815,7 @@ pre .id {
 }
 .article-inner h1.article-title,
 .article-title {
- color:#7d83dd;
+ color:#e76ada;
  margin-left:0;
  font-weight:300;
  line-height:35px;
@@ -1851,16 +1851,17 @@ pre .id {
  float:right
 }
 .article-more-link a {
- background:#4d4d4d;
- color:#fff;
+ background:rgb(238,167,208);
+ color:#744278;
  font-size:12px;
  padding:5px 8px;
  line-height:16px;
  border-radius:2px;
  transition:background .3s
+ box-shadow: 2px 2px 5px #8000807d;
 }
 .article-more-link a:hover {
- background:#3c3c3c
+ background: rgb(238, 167, 208);
 }
 .article-more-link a.hidden {
  visibility:hidden
