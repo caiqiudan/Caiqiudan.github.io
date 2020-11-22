@@ -758,7 +758,7 @@ html {
 }
 .left-col {
  background:#fff;
- width:330px;
+ width:300px;
  position:fixed;
  opacity:1;
  transition:all .2s ease-in;
@@ -1703,7 +1703,8 @@ pre .id {
  color:rgba(77,77,77,.75);
  -webkit-overflow-scrolling:touch;
  overflow-scrolling:touch;
- overflow-y:auto
+ overflow-y:auto;
+ padding-left: 60px;
 }
 .tools-col .tools-section .search-ul .search-li {
  padding:10px 20px;
