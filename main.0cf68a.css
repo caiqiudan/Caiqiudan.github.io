@@ -340,7 +340,7 @@ template {
 a {
  background:transparent;
  text-decoration:none;
- color:#08c
+ color:#6fa6c2
 }
 a:active {
  outline:0
@@ -782,7 +782,8 @@ html {
  border-bottom:1px solid color-border
 }
 .left-col #header a {
- color:#696969
+ color:#696969;
+ font-size: 17px;
 }
 .left-col #header a:hover {
  color:#b0a0aa
@@ -1114,16 +1115,15 @@ pre .id {
  height:4px;
  background-color:#fff;
  border-radius:4px;
- box-shadow:0 0 0 1px rgba(0,0,0,.3);
  position:absolute;
  top:7px;
  left:2px
 }
 .tagcloud a.color1 {
- background:#ff945c
+ background: #ec6fd3b3
 }
 .tagcloud a.color1:before {
- border-right-color:#ff945c
+ border-right-color:#ec6fd3b3;
 }
 .tagcloud a.color2 {
  background:#cc8167
@@ -1132,10 +1132,10 @@ pre .id {
  border-right-color:#cc8167
 }
 .tagcloud a.color3 {
- background:#ba8f6c
+ background:pink
 }
 .tagcloud a.color3:before {
- border-right-color:#ba8f6c
+ border-right-color:pink
 }
 .tagcloud a.color4 {
  background:#94635c
@@ -1477,12 +1477,11 @@ pre .id {
  border-bottom:none
 }
 .archives .archive-article-title {
- font-size:16px;
- color:#333;
- transition:color .3s
+ transition:color .3s;
+ color:rgb(223, 125, 182);
 }
 .archives .archive-article-title:hover {
- color:#657b83
+ color:rgb(255, 186, 226)
 }
 .archives .archive-article-title span {
  display:block;
@@ -1956,7 +1955,7 @@ pre .id {
 .article-inner h1:first-child {
  margin-bottom:10px;
  display:inline;
- color: #7e22a7;
+ color: rgb(238, 167, 208);
  font-size: 2.2em;
 }
 .article-entry {
@@ -2486,7 +2485,7 @@ pre .id {
 }
 .tooltip-left .tooltip-content {
  position:absolute;
- background:rgba(36,193,246,.9);
+ background:rgba(238, 136, 207, 0.85);
  z-index:9999;
  width:200px;
  bottom:50%;
@@ -3636,4 +3635,11 @@ a.pswp__share--download:hover {
 .pswp__error-msg a {
  color:#ccc;
  text-decoration:underline
+}
+
+.player {
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 0px #ccc;
+    background: #ffc0cb4a;
 }
