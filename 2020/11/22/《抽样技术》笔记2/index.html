@@ -16,7 +16,7 @@
 <meta property="og:description" content="《抽样技术》笔记2      不等概抽样">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-22T04:11:58.000Z">
-<meta property="article:modified_time" content="2020-11-23T09:13:11.329Z">
+<meta property="article:modified_time" content="2020-11-23T14:34:04.874Z">
 <meta property="article:author" content="Qiudan Cai">
 <meta property="article:tag" content="专业课笔记">
 <meta name="twitter:card" content="summary">
@@ -181,12 +181,12 @@
     《抽样技术》笔记2
     </h1></center><p></p>
 <h2 id="不等概抽样"><a href="#不等概抽样" class="headerlink" title="不等概抽样"></a>不等概抽样</h2><a id="more"></a>
-<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="==三级标题=="></a>==三级标题==</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><blockquote>
+<blockquote>
 <p><strong>为什么总体差异大必然导致简单随机抽样的精度较差？</strong></p>
 <p>答：结合超市的例题，简单随机抽样的总值的估计值$\hat Y=N\frac{1}{n}\sum\limits_{i=1}^n Y_i$ ，因为每个超市的销售额差距很大，所以不能用简单抽到的一个超市乘以总超市数来估计总超市的销售总额。</p>
 </blockquote>
 <p><strong>前提条件</strong>：需要辅助变量度量单元规模大小以确定入样概率</p>
-<h3 id="放回不等概抽样"><a href="#放回不等概抽样" class="headerlink" title="放回不等概抽样"></a>放回不等概抽样</h3><p><strong>PPS:</strong>放回不等==概抽样中，最常用的==是按照总体单元的规模大小来确定单元每次入样的概率。假设总体中第 $i$ 个单元的大小或规模的度量为 $M_i$ ，每次抽样中第 $i$ 个单元被抽样的概率用 $Z_i$ 表示，如果</p>
+<h3 id="放回不等概抽样"><a href="#放回不等概抽样" class="headerlink" title="放回不等概抽样"></a>放回不等概抽样</h3><p><strong>PPS:</strong>放回不等<code>概抽样中，最常用的</code>是按照总体单元的规模大小来确定单元每次入样的概率。假设总体中第 $i$ 个单元的大小或规模的度量为 $M_i$ ，每次抽样中第 $i$ 个单元被抽样的概率用 $Z_i$ 表示，如果</p>
 <p><script type="math/tex">Z_i = \frac{M_i}{M_0}=\frac{M_i}{\sum\limits_{i=1}^N M_i}</script> ，称这种不等概抽样为<strong>放回的与规模大小成正比的概率抽样</strong>(<strong>pps抽样 </strong>probability proportional)</p>
 <p><strong>抽样方法：</strong>代码法、拉希里法</p>
 <h4 id="1-1-1-只抽取一个样本单元的不等概抽样"><a href="#1-1-1-只抽取一个样本单元的不等概抽样" class="headerlink" title="1.1.1 只抽取一个样本单元的不等概抽样"></a>1.1.1 只抽取一个样本单元的不等概抽样</h4><blockquote>
@@ -291,7 +291,7 @@
 <blockquote>
 <p>如果采用的是PPS抽样，即 $Z_i=\frac{M_i}{M_0}$ ,则有 $\hat Y_{HH}=\frac{1}{n}\sum\limits_{i=1}^n\frac{y_i}{Z_i}=\frac{M_0}{n}\sum\limits_{i=1}^n\frac{y_i}{M_i}$ </p>
 </blockquote>
-<p>==<strong>注：</strong>上方的估计量 $\hat Y_{HH}$ 是 $n$ 个独立观测的平均==，故</p>
+<p><strong>注：</strong>上方的估计量 $\hat Y_{HH}$ 是 $n$ 个独立观测的平均，故</p>
 <p><strong>总体总值估计的方差：</strong> </p>
 <p>$V(\hat Y_{HH})=\frac{1}{n}\sum\limits_{i=1}^N Z_i(\frac{Y_i}{Z_i}-Y)^2$  ， 无偏估计为：$v(\hat Y_{HH})=\frac{1}{n}\frac{1}{n-1}\sum\limits_{i=1}^n(\frac{y_i}{Z_i}-\hat Y_{HH})^2$ </p>
 <blockquote>
@@ -305,34 +305,7 @@
 <p><strong>总体总值估计量的方差的估计量：</strong> </p>
 <p>$ v(\hat Y)=\frac{1}{n(n-1)}\sum\limits_{i=1}^n(\frac{y_i}{Z_i}-\hat Y)^2=\frac{M_0^2}{n(n-1)}\sum\limits_{i=1}^n(\bar y_i-\bar{\bar y})^2$</p>
 </blockquote>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>124</th>
-<th>222</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">代码块</span><br><span class="line">print(<span class="string">"hello world"</span>)</span><br></pre></td></tr></tbody></table></figure>
+<p>更新中·····或将改为线下笔记···</p>
 
       
 
@@ -416,15 +389,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/11/22/%E3%80%8A%E9%87%91%E8%9E%8D%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E3%80%8B/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/11/23/%E3%80%8A%E6%8A%BD%E6%A0%B7%E6%8A%80%E6%9C%AF%E3%80%8B%E7%AC%94%E8%AE%B01/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          《金融数学》笔记
+          《抽样技术》笔记1
         
       </div>
     </a>
   
+  
+    <a href="/2020/11/22/%E3%80%8A%E9%87%91%E8%9E%8D%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E3%80%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">《金融数学》笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -451,7 +429,7 @@
                     <div class="toc-article">
                     <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">
     《抽样技术》笔记2
-    </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E7%AD%89%E6%A6%82%E6%8A%BD%E6%A0%B7"><span class="toc-number">1.1.</span> <span class="toc-text">不等概抽样</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.1.</span> <span class="toc-text">&#x3D;&#x3D;三级标题&#x3D;&#x3D;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">四级标题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%BE%E5%9B%9E%E4%B8%8D%E7%AD%89%E6%A6%82%E6%8A%BD%E6%A0%B7"><span class="toc-number">1.1.2.</span> <span class="toc-text">放回不等概抽样</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-1-%E5%8F%AA%E6%8A%BD%E5%8F%96%E4%B8%80%E4%B8%AA%E6%A0%B7%E6%9C%AC%E5%8D%95%E5%85%83%E7%9A%84%E4%B8%8D%E7%AD%89%E6%A6%82%E6%8A%BD%E6%A0%B7"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">1.1.1 只抽取一个样本单元的不等概抽样</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-2-%E6%99%AE%E9%80%9A%E6%94%BE%E5%9B%9E%E4%B8%8D%E7%AD%89%E6%A6%82%E6%8A%BD%E6%A0%B7"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">1.1.2 普通放回不等概抽样</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-3-%E6%94%BE%E5%9B%9E%E4%B8%8D%E7%AD%89%E6%A6%82%E6%95%B4%E7%BE%A4%E6%8A%BD%E6%A0%B7"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">1.1.3 放回不等概整群抽样</span></a></li></ol></li></ol></li></ol></li></ol>
+    </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E7%AD%89%E6%A6%82%E6%8A%BD%E6%A0%B7"><span class="toc-number">1.1.</span> <span class="toc-text">不等概抽样</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%BE%E5%9B%9E%E4%B8%8D%E7%AD%89%E6%A6%82%E6%8A%BD%E6%A0%B7"><span class="toc-number">1.1.1.</span> <span class="toc-text">放回不等概抽样</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-1-%E5%8F%AA%E6%8A%BD%E5%8F%96%E4%B8%80%E4%B8%AA%E6%A0%B7%E6%9C%AC%E5%8D%95%E5%85%83%E7%9A%84%E4%B8%8D%E7%AD%89%E6%A6%82%E6%8A%BD%E6%A0%B7"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">1.1.1 只抽取一个样本单元的不等概抽样</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-2-%E6%99%AE%E9%80%9A%E6%94%BE%E5%9B%9E%E4%B8%8D%E7%AD%89%E6%A6%82%E6%8A%BD%E6%A0%B7"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">1.1.2 普通放回不等概抽样</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-3-%E6%94%BE%E5%9B%9E%E4%B8%8D%E7%AD%89%E6%A6%82%E6%95%B4%E7%BE%A4%E6%8A%BD%E6%A0%B7"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">1.1.3 放回不等概整群抽样</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
