@@ -1816,7 +1816,7 @@ pre .id {
 }
 .article-inner h1.article-title,
 .article-title {
- color:#e76ada;
+ color:rgb(238, 167, 208);
  margin-left:0;
  font-weight:300;
  line-height:35px;
@@ -1826,8 +1826,9 @@ pre .id {
 }
 .article-header {
  border-left: 9px solid rgb(238, 167, 208);
- padding:30px 0 15px 25px;
- padding-left:7.6923%
+ padding:22px 0 15px 25px;
+ padding-left:7.6923%;
+ height: 80px;
 }
 .article-meta {
  width:150px;

@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>《金融数学》笔记 | Hexo</title>
+  <title>《金融数学》笔记 | 我的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="《金融数学》笔记期初付定期年金的现值 $\ddot{a}_{\bar n|i} $ 或 $\ddot{a}_{\bar n|} $  利息度量符号说明    符号 说明     $a(t)$ 累积函数，表示时间零点的1单位本金在时间 $t$ 的价值   $a^{-1}(t)$ 贴现函数，表示时间 $t$ 的1单位本金在时间零点的价值   $i$ 年有效利率，表示时间零点的1单位本金在1年末所产生的">
+  <meta name="description" content="《金融数学》笔记       利息度量符号说明    符号 说明     $a(t)$ 累积函数，表示时间零点的1单位本金在时间 $t$ 的价值   $a^{-1}(t)$ 贴现函数，表示时间 $t$ 的1单位本金在时间零点的价值   $i$ 年有效利率，表示时间零点的1单位本金在1年末所产生的的利息   $d$ 年有效贴现率   $i^{(m)}$ 每年复利 $m$ 次的年名义利率">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《金融数学》笔记">
 <meta property="og:url" content="http://example.com/2020/11/22/%E3%80%8A%E9%87%91%E8%9E%8D%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E3%80%8B/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="《金融数学》笔记期初付定期年金的现值 $\ddot{a}_{\bar n|i} $ 或 $\ddot{a}_{\bar n|} $  利息度量符号说明    符号 说明     $a(t)$ 累积函数，表示时间零点的1单位本金在时间 $t$ 的价值   $a^{-1}(t)$ 贴现函数，表示时间 $t$ 的1单位本金在时间零点的价值   $i$ 年有效利率，表示时间零点的1单位本金在1年末所产生的">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="《金融数学》笔记       利息度量符号说明    符号 说明     $a(t)$ 累积函数，表示时间零点的1单位本金在时间 $t$ 的价值   $a^{-1}(t)$ 贴现函数，表示时间 $t$ 的1单位本金在时间零点的价值   $i$ 年有效利率，表示时间零点的1单位本金在1年末所产生的的利息   $d$ 年有效贴现率   $i^{(m)}$ 每年复利 $m$ 次的年名义利率">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-22T04:11:58.000Z">
-<meta property="article:modified_time" content="2020-11-23T02:15:24.445Z">
+<meta property="article:modified_time" content="2020-11-23T03:02:25.077Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="专业课笔记">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -30,7 +30,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(200deg,#fbc2eb,#a6c1ee);
     }
   </style>
   
@@ -48,11 +48,11 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: linear-gradient(#fbc2eb,#a6c1ee)"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="https://s3.cn-north-1.amazonaws.com.cn/mococn-fxa-prod/5f43d3f9502122ff5946afa6acfb2e4b" class="js-avatar">
+			<img src="/img/小白3.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -89,14 +89,14 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: linear-gradient(#fbc2eb,#a6c1ee)"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://s3.cn-north-1.amazonaws.com.cn/mococn-fxa-prod/5f43d3f9502122ff5946afa6acfb2e4b" class="js-avatar">
+				<img src="/img/小白3.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -153,7 +153,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="《金融数学》笔记"><a href="#《金融数学》笔记" class="headerlink" title="《金融数学》笔记"></a>《金融数学》笔记</h1><p>期初付定期年金的现值 $\ddot{a}_{\bar n|i} $ 或 $\ddot{a}_{\bar n|} $ </p>
+        <center><h1>
+    《金融数学》笔记
+    </h1></center>
+
 <h2 id="利息度量"><a href="#利息度量" class="headerlink" title="利息度量"></a>利息度量</h2><h4 id="符号说明"><a href="#符号说明" class="headerlink" title="符号说明"></a>符号说明</h4><div class="table-container">
 <table>
 <thead>
@@ -245,10 +248,10 @@ d=\frac{(1+i)^t-(1+i)^{t-1}}{(1+i)^t}=\frac{1}{1+i}</script><p>复利条件下�
 <h4 id="单贴现率"><a href="#单贴现率" class="headerlink" title="单贴现率"></a>单贴现率</h4><p>  假设单贴现率为 $d$ ，则 $t$ 时刻的1元在期初的现值为：</p>
 <p>  $a^{-1}(t)=1-dt，0\leq t\leq \frac{1}{d}$ </p>
 <p>  <u>除非特别说明，贴现率指的是复贴现率</u> </p>
-<h3 id="名义利率-—-多年复利一次-一年复利一次的利率"><a href="#名义利率-—-多年复利一次-一年复利一次的利率" class="headerlink" title="名义利率 — 多年复利一次/一年复利一次的利率"></a>名义利率 — 多年复利一次/一年复利一次<u>的利率</u></h3><p><u>名义名义，顾名思义，就是只是名字这么叫，实际上不是真正（有效）的利率的意思，只是给个名分罢了。</u></p>
+<h3 id="名义利率-—-多年复利一次-一年复利一次的利率"><a href="#名义利率-—-多年复利一次-一年复利一次的利率" class="headerlink" title="名义利率 — 多年复利一次/一年复利一次的利率"></a>名义利率 — 多年复利一次/一年复利一次<u>的利率</u></h3><p><u>名义名义，顾名思义，就是只是名字这么叫，实际上不是真正（有效）的利率的意思，只是给个名分罢了。</u> </p>
 <h4 id="年名义利率"><a href="#年名义利率" class="headerlink" title="年名义利率"></a>年名义利率</h4><blockquote>
 <p>例子：我从银行借100万元，贷款期限1年。需要一次性在年末支付12万元（称12%为年有效利率）。</p>
-<p>​    我可以分成四次，在每个季度末支付3万元（称12%为==年名义利率==）。每个季度的有效利率为：</p>
+<p>​    我可以分成四次，在每个季度末支付3万元（称12%为<code>年名义利率</code>）。每个季度的有效利率为：</p>
 <p>​    $3 \div 100=3\%$  </p>
 </blockquote>
 <p>  常用的标准时间单位是年度，所以利率通常表示为年利率的形式。</p>
@@ -272,7 +275,7 @@ d=\frac{(1+i)^t-(1+i)^{t-1}}{(1+i)^t}=\frac{1}{1+i}</script><p>复利条件下�
 <script type="math/tex; mode=display">
 \qquad i=[1+\frac{i^{(m)}}{m}]^m-1 \qquad \qquad \qquad \qquad i^{(m)}=m[(1+i)^{\frac{1}{m}}-1]</script><p> 累积函数可以这么表示：</p>
 <script type="math/tex; mode=display">
-\quad a(t)=(1+i)^t=(1+[i+\frac{i^{(m)}}{m}]^m-1)^t=(i+\frac{i^{m}}{m})^{tm}</script><p>==多年复利一次（如 $k$ 年复利一次）的名义利率客单做每年复利 $m=\frac{1}{k}$ 次。==</p>
+\quad a(t)=(1+i)^t=(1+[i+\frac{i^{(m)}}{m}]^m-1)^t=(i+\frac{i^{m}}{m})^{tm}</script><p>多年复利一次（如 $k$ 年复利一次）的名义利率客单做每年复利 $m=\frac{1}{k}$ 次。</p>
 <blockquote>
 <p>年名义利率和年有效利率之间的关系还可以表示为：</p>
 <script type="math/tex; mode=display">
@@ -307,7 +310,7 @@ d=\frac{(1+i)^t-(1+i)^{t-1}}{(1+i)^t}=\frac{1}{1+i}</script><p>复利条件下�
 <p>每个月的有效贴现率为 $1\%$ ，则相应的年名义贴现率为 $1\%×12=12\%$ 。</p>
 <p>根据月有效贴现率，计算年有效贴现率：</p>
 <p>​    月有效贴现率为 $0.5\%$ ，已知年末1元根据月有效贴现率计算的现值应该=根据年有效贴现率计算的现值，则有</p>
-<p>  ==$(1-0.5\%)^{12}=1-d$==(每个月计算一次现值，计算12次） ，则年有效贴现率为： $1-(1-0.5\%)^{12}=5.8\%$ </p>
+<p>  <script type="math/tex">(1-0.5\%)^{12}=1-d</script>(每个月计算一次现值，计算12次） ，则年有效贴现率为： $1-(1-0.5\%)^{12}=5.8\%$ </p>
 </blockquote>
 <p><u><em>在使用名义贴现率时，必须说明多长时间贴现一次，否则是没有意义的。</em></u></p>
 <h4 id="年名义贴现率-d-m"><a href="#年名义贴现率-d-m" class="headerlink" title="年名义贴现率 $d^{(m)}$"></a>年名义贴现率 $d^{(m)}$</h4><p>每年贴现 $m$ 次，则每次贴现率为 $\frac{d^{(m)}}{m}$ 。</p>
@@ -379,52 +382,42 @@ a(t)^{-1}=(1-d)^t=(1-\frac{d^{(m)}}{m})^{tm}</script><p>年名义贴现率与年
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">$a_{\bar{n</td>
-<td>}}$,$s_{\bar{n</td>
-<td>}}$</td>
+<td style="text-align:center">$a<em>{\bar{n\vert} }$,$s</em>{\bar{n\vert}}$</td>
 <td>每年支付1元，$n$ 年期期末付年金的现值和终值</td>
 </tr>
 <tr>
-<td style="text-align:center">$\ddot{a}_{\bar{n</td>
-<td>}}$,$\ddot{s}_{\bar{n</td>
-<td>}}$</td>
+<td style="text-align:center">$\ddot{a}<em>{\bar{n\vert}}$ ,$\ddot{s}</em>{\bar{n\vert}}$</td>
 <td>每年支付1元，$n$ 年期期初付年金的现值和终值</td>
 </tr>
 <tr>
-<td style="text-align:center">$a_{\bar{n</td>
-<td>}}^{(m)}$,$s^{(m)}_{\bar{n</td>
-<td>}}$</td>
+<td style="text-align:center">$a<em>{\bar{n\vert}}^{(m)}$ ,$s^{(m)}</em>{\bar{n\vert}}$</td>
 <td>每年支付1元，分 $m$ 次等额支付，$n$ 年期期末支付年金的现值和终值</td>
 </tr>
 <tr>
-<td style="text-align:center">$\ddot{a}_{\bar{a</td>
-<td>}}$,$\ddot{s}_{\bar{n</td>
-<td>}}^{(m)}$</td>
+<td style="text-align:center">$\ddot{a}<em>{\bar{a\vert}}$,$\ddot{s}</em>{\bar{n\vert}}^{(m)}$</td>
 <td>每年支付1元，分 $m$ 次等额支付，$n$ 年期期初付年金的现值和终值</td>
 </tr>
 <tr>
-<td style="text-align:center">$\bar{a}_{\bar{n</td>
-<td>}}$,$\bar{s}_{\bar{n</td>
-<td>}}$</td>
+<td style="text-align:center">$\bar{a}<em>{\bar{n\vert}}$,$\bar{s}</em>{\bar{n\vert}}$</td>
 <td>每年支付1元，$n$ 年期连续支付年金的现值和终值</td>
 </tr>
 </tbody>
 </table>
 </div>
 <h4 id="年金的含义：-一系列的收款或付款。“结付”、“支付”、“付款”…​"><a href="#年金的含义：-一系列的收款或付款。“结付”、“支付”、“付款”…​" class="headerlink" title="年金的含义： 一系列的收款或付款。“结付”、“支付”、“付款”…​"></a>年金的含义： 一系列的收款或付款。“结付”、“支付”、“付款”…​</h4><h4 id="年金的分类："><a href="#年金的分类：" class="headerlink" title="年金的分类："></a>年金的分类：</h4><ul>
-<li><p>支付时间和金额是否确定 $\left \{ \begin{align} &amp;确定年金\\&amp;风险年金 \end{align} \right.$ </p>
+<li><p>支付时间和金额是否确定 $\left { \begin{align} &amp;确定年金\&amp;风险年金 \end{align} \right.$ </p>
 </li>
-<li><p>支付期限长短                $\left \{ \begin{align} &amp;定期年金\\&amp;永续年金 \end{align} \right.$</p>
+<li><p>支付期限长短                $\left { \begin{align} &amp;定期年金\&amp;永续年金 \end{align} \right.$</p>
 </li>
-<li><p>支付周期                      $\left \{\begin{align}&amp;每年支付一次\\&amp;每季支付一次\\&amp;每月支付一次\\&amp; \cdots \end{align}\right.$</p>
+<li><p>支付周期                      $\left {\begin{align}&amp;每年支付一次\&amp;每季支付一次\&amp;每月支付一次\&amp; \cdots \end{align}\right.$</p>
 </li>
-<li>支付时点                      $\left \{\begin{align}&amp;期初付年金 \\&amp;期末付年金 \end{align}\right.$</li>
-<li>第一次支付的时间不同    $\left \{\begin{align}&amp;即期年金（第一期就开始支付的年金）\\&amp;延期年金（延迟若干个时期以后才开始支付的年金） \end{align}\right.$</li>
-<li>每次付款的金额是否相等$\left \{\begin{align}&amp;等额年金\\&amp;变额年金  \end{align}\right.$</li>
+<li>支付时点                      $\left {\begin{align}&amp;期初付年金 \&amp;期末付年金 \end{align}\right.$</li>
+<li>第一次支付的时间不同    $\left {\begin{align}&amp;即期年金（第一期就开始支付的年金）\&amp;延期年金（延迟若干个时期以后才开始支付的年金） \end{align}\right.$</li>
+<li>每次付款的金额是否相等$\left {\begin{align}&amp;等额年金\&amp;变额年金  \end{align}\right.$</li>
 </ul>
 <p>PS：本文只讨论等额年金额价值分析</p>
 <h3 id="年金的现值-年金的一系列付款在期初的价值"><a href="#年金的现值-年金的一系列付款在期初的价值" class="headerlink" title="年金的现值 年金的一系列付款在期初的价值"></a>年金的现值 <code>年金的一系列付款在期初的价值</code></h3><p>共n个时期，每个时期末/初支付1元，利率为 $i$ </p>
-<h4 id="期末付定期年金的现值-a-bar-n-i-或-a-bar-n"><a href="#期末付定期年金的现值-a-bar-n-i-或-a-bar-n" class="headerlink" title="期末付定期年金的现值 $a_{\bar{n|i}}$ 或 $a_{\bar{n|}}$"></a>期末付定期年金的现值 $a_{\bar{n|i}}$ 或 $a_{\bar{n|}}$</h4><script type="math/tex; mode=display">
+<h4 id="期末付定期年金的现值-a-bar-n-i-或-a-bar-n"><a href="#期末付定期年金的现值-a-bar-n-i-或-a-bar-n" class="headerlink" title="期末付定期年金的现值 $a{\bar{n|i}}$ 或 $a{\bar{n|}}$"></a>期末付定期年金的现值 $a<em>{\bar{n|i}}$ 或 $a</em>{\bar{n|}}$</h4><script type="math/tex; mode=display">
 a_{\bar{n|}}=\frac{1-v^n}{i}=\frac{1-(1+i)^{-n}}{i}\quad ,\qquad v:贴现因子，是(1+i)^{-1}的缩写</script><blockquote>
 <p>证明： 已知 </p>
 <script type="math/tex; mode=display">
@@ -445,21 +438,21 @@ a_{\bar n|}&=a^{-1}(1)+a^{-1}(2)+···a^{-1}(n)\\
 ia_{\bar n|}&=1-v^n\\
 a_{\bar n|}&=\frac{1-v^n}{i}
 \end{align}</script></blockquote>
-<h4 id="期初付定期年金的现值-ddot-a-bar-n-i-或-ddot-a-bar-n"><a href="#期初付定期年金的现值-ddot-a-bar-n-i-或-ddot-a-bar-n" class="headerlink" title="期初付定期年金的现值 $\ddot{a}_{\bar n|i} $ 或 $\ddot{a}_{\bar n|} $"></a>期初付定期年金的现值 $\ddot{a}_{\bar n|i} $ 或 $\ddot{a}_{\bar n|} $</h4><p>$\ddot{a}_{\bar n|}=\frac{1-v^n}{d}$ </p>
+<h4 id="期初付定期年金的现值-ddot-a-bar-n-i-或-ddot-a-bar-n"><a href="#期初付定期年金的现值-ddot-a-bar-n-i-或-ddot-a-bar-n" class="headerlink" title="期初付定期年金的现值 $\ddot{a}{\bar n|i} $ 或 $\ddot{a}{\bar n|} $"></a>期初付定期年金的现值 $\ddot{a}<em>{\bar n|i} $ 或 $\ddot{a}</em>{\bar n|} $</h4><p>$\ddot{a}_{\bar n|}=\frac{1-v^n}{d}$ </p>
 <blockquote>
-<p>因为 $a_{\bar n|}$ 相对于 $\ddot{a}_{\bar n|}$ 是把每期再延后1期，所以要 $\ddot{a}_{\bar n|}$ 要除去一个 $v=(1+i)^{-1}$</p>
+<p>因为 $a<em>{\bar n|}$ 相对于 $\ddot{a}</em>{\bar n|}$ 是把每期再延后1期，所以要 $\ddot{a}_{\bar n|}$ 要除去一个 $v=(1+i)^{-1}$</p>
 <script type="math/tex; mode=display">
 \begin{align}
 \ddot{a}_{\bar n|}&=(1+i)a_{\bar n|} \\
 &=\frac{1-v^n}{\frac{i}{1+i}}\\
 &=\frac{1-v^n}{d}
 \end{align}</script></blockquote>
-<h4 id="期末付永续年金的现值-a-bar-infty"><a href="#期末付永续年金的现值-a-bar-infty" class="headerlink" title="期末付永续年金的现值 $a_{\bar \infty|}$"></a>期末付永续年金的现值 $a_{\bar \infty|}$</h4><p>$a_{\bar \infty |}=\lim\limits_{n\rightarrow \infty}a_{\bar n|}=\lim\limits_{n\rightarrow \infty}\frac{1-v^n}{i}=\frac{1}{i}$ </p>
-<h4 id="期初付永续年金的现值-ddot-a-bar-infty"><a href="#期初付永续年金的现值-ddot-a-bar-infty" class="headerlink" title="期初付永续年金的现值 $\ddot{a}_{\bar \infty |}$"></a>期初付永续年金的现值 $\ddot{a}_{\bar \infty |}$</h4><p>$\ddot{a}_{\bar \infty |}=\lim\limits_{n\rightarrow \infty}\ddot{a}_{\bar n|}=\lim\limits_{n\rightarrow \infty}=\frac{1-v^n}{d}=\frac{1}{d}$  </p>
-<p>有$\ddot{a}_{\bar \infty |}=(1+i)a_{\bar n|}$  </p>
-<h3 id="年金的终值-s"><a href="#年金的终值-s" class="headerlink" title="年金的终值 $s$"></a>年金的终值 $s$</h3><h4 id="期末付定期年金的终值-s-bar-n-i-或-s-bar-n"><a href="#期末付定期年金的终值-s-bar-n-i-或-s-bar-n" class="headerlink" title="期末付定期年金的终值 $s_{\bar n|i}$ 或 $s_{\bar n|}$"></a>期末付定期年金的终值 $s_{\bar n|i}$ 或 $s_{\bar n|}$</h4><p>$s_{\bar n|}=\frac{(1+i)^n-1}{i}$ </p>
+<h4 id="期末付永续年金的现值-a-bar-infty"><a href="#期末付永续年金的现值-a-bar-infty" class="headerlink" title="期末付永续年金的现值 $a_{\bar \infty|}$"></a>期末付永续年金的现值 $a_{\bar \infty|}$</h4><p>$a<em>{\bar \infty |}=\lim\limits</em>{n\rightarrow \infty}a<em>{\bar n|}=\lim\limits</em>{n\rightarrow \infty}\frac{1-v^n}{i}=\frac{1}{i}$ </p>
+<h4 id="期初付永续年金的现值-ddot-a-bar-infty"><a href="#期初付永续年金的现值-ddot-a-bar-infty" class="headerlink" title="期初付永续年金的现值 $\ddot{a}_{\bar \infty |}$"></a>期初付永续年金的现值 $\ddot{a}_{\bar \infty |}$</h4><p>$\ddot{a}<em>{\bar \infty |}=\lim\limits</em>{n\rightarrow \infty}\ddot{a}<em>{\bar n|}=\lim\limits</em>{n\rightarrow \infty}=\frac{1-v^n}{d}=\frac{1}{d}$  </p>
+<p>有$\ddot{a}<em>{\bar \infty |}=(1+i)a</em>{\bar n|}$  </p>
+<h3 id="年金的终值-s"><a href="#年金的终值-s" class="headerlink" title="年金的终值 $s$"></a>年金的终值 $s$</h3><h4 id="期末付定期年金的终值-s-bar-n-i-或-s-bar-n"><a href="#期末付定期年金的终值-s-bar-n-i-或-s-bar-n" class="headerlink" title="期末付定期年金的终值 $s{\bar n|i}$ 或 $s{\bar n|}$"></a>期末付定期年金的终值 $s<em>{\bar n|i}$ 或 $s</em>{\bar n|}$</h4><p>$s_{\bar n|}=\frac{(1+i)^n-1}{i}$ </p>
 <blockquote>
-<p>证明： 把现值 $a_{\bar n|}$ 按照利率 $i$ 累计到第 $n$ 年末即得到终值为 $A(t)=A(0)a(t)=a_{\bar n|}(1+i)^n$ </p>
+<p>证明： 把现值 $a<em>{\bar n|}$ 按照利率 $i$ 累计到第 $n$ 年末即得到终值为 $A(t)=A(0)a(t)=a</em>{\bar n|}(1+i)^n$ </p>
 <script type="math/tex; mode=display">
 \begin{align}
 \qquad s_{\bar n|}=&(1+i)^na_{\bar n|}\\
@@ -471,9 +464,9 @@ a_{\bar n|}&=\frac{1-v^n}{i}
 \begin{align}
 [解] \quad 2s_{\bar 10|}+2s_{\bar 5|}
 \end{align}</script></blockquote>
-<h4 id="期初付定期年金的终值-ddot-s-bar-n-i-或-ddot-s-bar-n"><a href="#期初付定期年金的终值-ddot-s-bar-n-i-或-ddot-s-bar-n" class="headerlink" title="期初付定期年金的终值 $\ddot{s}_{\bar n|i}$ 或 $\ddot s_{\bar n|}$"></a>期初付定期年金的终值 $\ddot{s}_{\bar n|i}$ 或 $\ddot s_{\bar n|}$</h4><p>$\ddot s_{\bar n|}=\frac{(1+i)^n-1}{i}$ </p>
+<h4 id="期初付定期年金的终值-ddot-s-bar-n-i-或-ddot-s-bar-n"><a href="#期初付定期年金的终值-ddot-s-bar-n-i-或-ddot-s-bar-n" class="headerlink" title="期初付定期年金的终值 $\ddot{s}{\bar n|i}$ 或 $\ddot s{\bar n|}$"></a>期初付定期年金的终值 $\ddot{s}<em>{\bar n|i}$ 或 $\ddot s</em>{\bar n|}$</h4><p>$\ddot s_{\bar n|}=\frac{(1+i)^n-1}{i}$ </p>
 <blockquote>
-<p>有 $\ddot s_{\bar n|}=(1+i)s_{\bar n}=(1+i)\frac{(1+i)^n-1}{i}=\frac{(1+i)^n-1}{d}$ </p>
+<p>有 $\ddot s<em>{\bar n|}=(1+i)s</em>{\bar n}=(1+i)\frac{(1+i)^n-1}{i}=\frac{(1+i)^n-1}{d}$ </p>
 </blockquote>
 <h3 id="年金在任意时点上的值"><a href="#年金在任意时点上的值" class="headerlink" title="年金在任意时点上的值"></a>年金在任意时点上的值</h3><h3 id="每年支付-m-次的等额年金"><a href="#每年支付-m-次的等额年金" class="headerlink" title="每年支付 $m$ 次的等额年金"></a>每年支付 $m$ 次的等额年金</h3><h3 id="连续支付的等额年金"><a href="#连续支付的等额年金" class="headerlink" title="连续支付的等额年金"></a>连续支付的等额年金</h3><h3 id="价值方程"><a href="#价值方程" class="headerlink" title="价值方程"></a>价值方程</h3>
       
@@ -824,5 +817,20 @@ MathJax.Hub.Queue(function() {
 
 </div>
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
